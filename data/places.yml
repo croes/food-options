@@ -60,3 +60,22 @@
     - If you take the buffet, you don't have to wait for your food.
   categories:
     - asian
+
+- name: Mamma Mia
+  image: http://www.mammamia.be/images/house300.jpg
+  address: Parkstraat 107, 3000 Leuven
+  telephone: +32 16 23 15 88
+  email: mammamia@skynet.be
+  website: http://www.mammamia.be/index.html
+  menu: http://www.mammamia.be/Mammamia-menu.pdf
+  delivery: true
+  openingHours:
+    - 12:00-14:30 & 17:30-23:00
+    - 12:00-14:30 & 17:30-23:00
+    - 12:00-14:30 & 17:30-23:00
+    - 12:00-14:30 & 17:30-23:00
+    - 12:00-14:30 & 17:30-23:00
+    - 17:30-23:00
+    - Closed
+  categories:
+    - italian
