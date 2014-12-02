@@ -1,0 +1,10 @@
+language: ruby
+  rvm:
+  - 2.0.0
+branches:
+  only:
+  - master
+script: middleman deploy
+env:
+  global:
+    secure: "TfmBI3JpqhUrgvnCq9p4v2Irz9TcqD2kmMlZdhHmpi4/aL6FnWxYfAKImHdyn0D9ZughoceHh9ZIx52xxah2gk5UohQg3pEkr++SRiO5Y8aqhX62PCq77AUtJDaVHkSljVIOsVqqRz8NO8JcuERfjfCOZmdqYJHnQJiavnM55CE="
