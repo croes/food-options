@@ -1,9 +1,9 @@
 language: ruby
   rvm:
-  - 2.0.0
+    - 2.0.0
 branches:
   only:
-  - master
+    - master
 script: middleman deploy
 env:
   global:
