@@ -1,3 +1,63 @@
 ---
 title: Food Options
 ---
+<div id="main" class="wrapper style4">
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div id="sidebar" class="4u">
+        <section>
+          <header class="major">
+            <h2>Categories</h2>
+          </header>
+          
+          <% data.categories.sort.each do |category| %>
+          <li><a href="#"><%= category.capitalize %></a></li>
+          <% end %>
+        </section>
+      </div>
+      <!-- Content -->
+      <div id="content" class="8u skel-cell-important">
+        
+        <% data.categories.sort.each do |category| %>
+        
+        <section>
+          <header class="major">
+            <h2><%= category.capitalize %></h2>
+          </header>
+          
+          <% data.places.select{|item| item.categories.include?(category)}.sort{|item1, item2| item1.name <=> item2.name}.each do |place| %>
+          <h3><%= place.name.capitalize %></h3>
+          <p>
+          <table>
+            <tr>
+              <td><% if !place.image.nil? %><img src="<%= place.image %>" width="150" height="150" /><% end %></td>
+              <td></td>
+              <td valign="top" align="left">
+                <% if !place.address.nil? %>
+                <%= place.address.split(',')[0]%></br>
+                <%= place.address.split(',')[1]%></br>
+                <% end %>
+                <% if !place.telephone.nil? %>
+                <i class="fa fa-phone"></i> <%= place.telephone %></br>
+                <% end %>
+                <% if !place.mobile.nil? %>
+                <i class="fa fa-mobile"></i> <%= place.mobile %></br>
+                <% end %>
+                <% if !place.email.nil? %><a href="mailto:<%= place.email %>" class="fa fa-envelope"></a><% end %>
+                <% if !place.website.nil? %><a href="<%= place.website %>" class="fa fa-home"></a><% end %>
+                <% if !place.menu.nil? %><a href="<%= place.menu %>" class="fa fa-cutlery"></a><% end %>
+                </br>
+              </td>
+            </tr>
+          </table>
+          </p>
+          <% end %>
+          
+        </section>
+        
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

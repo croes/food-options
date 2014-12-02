@@ -14,7 +14,7 @@
 # Per-page layout changes:
 #
 # With no layout
-page "options.html", :layout => :page
+# page "options.html", :layout => :page
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
