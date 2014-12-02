@@ -14,7 +14,6 @@
 # Per-page layout changes:
 #
 # With no layout
-page "contribute.html", :layout => :page
 page "options.html", :layout => :page
 #
 # With alternative layout
@@ -46,6 +45,8 @@ activate :livereload
 #   end
 # end
 
+set :relative_links, true
+
 set :css_dir, 'css'
 
 set :js_dir, 'js'
@@ -64,7 +65,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
