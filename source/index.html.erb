@@ -13,7 +13,9 @@ title: Food Options
             <h2>Categories</h2>
           </header>
           
-          <% data.categories.sort.each do |category| %>
+          <% categories = data.places.map{|item| item.categories}.flatten.uniq.sort %>
+
+          <% categories.each do |category| %>
             <li><a href="#"><%= category.capitalize %></a></li>
           <% end %>
         </section>
@@ -22,7 +24,7 @@ title: Food Options
       <!-- Content -->
       <div id="content" class="8u skel-cell-important">
         
-        <% data.categories.sort.each do |category| %>
+        <% categories.each do |category| %>
         
         <section>
           <header class="major">
