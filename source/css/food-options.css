@@ -1,0 +1,10 @@
+.jumbotron {
+  padding: 0em;
+  background: #222222 url(../img/banner.jpg) no-repeat;
+  color: #eeeeee;
+  text-align: center;
+}
+
+.footer {
+  margin-bottom: 0;
+}

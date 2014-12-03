@@ -1,71 +1,59 @@
 ---
 title: Food Options
 ---
-
-<div id="main" class="wrapper style4">
-  <div class="container">
-    <div class="row">
-
-      <!-- Sidebar -->
-      <div id="sidebar" class="4u">
-        <section>
-          <header class="major">
-            <h2>Categories</h2>
-          </header>
-          
-          <% categories = data.places.map{|item| item.categories}.flatten.uniq.sort %>
-
+<% categories = data.places.map{|item| item.categories}.flatten.uniq.sort %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Categories</h3>
+        </div>
+        <div class="panel-body">
           <% categories.each do |category| %>
-            <li><a href="#"><%= category.capitalize %></a></li>
+          <a href="#"><%= category.capitalize %></a><br />
           <% end %>
-        </section>
-      </div>
-
-      <!-- Content -->
-      <div id="content" class="8u skel-cell-important">
-        
-        <% categories.each do |category| %>
-        
-        <section>
-          <header class="major">
-            <h2><%= category.capitalize %></h2>
-          </header>
-          
-          <% data.places.select{|item| item.categories.include?(category)}.sort{|item1, item2| item1.name <=> item2.name}.each do |place| %>
-            <h3><%= place.name %></h3>
-            <p>
-            <table>
-              <tr>
-                <td><% if !place.image.nil? %><img src="<%= place.image %>" width="150" height="150" /><% end %></td>
-                <td></td>
-                <td valign="top" align="left">
-                  <% if !place.address.nil? %>
-                    <%= place.address.split(',')[0]%></br>
-                    <%= place.address.split(',')[1]%></br>
-                  <% end %>
-                  
-                  <% if !place.telephone.nil? %>
-                    <i class="fa fa-phone"></i> <%= place.telephone %></br> 
-                  <% end %>
-                  
-                  <% if !place.mobile.nil? %>
-                    <i class="fa fa-mobile"></i> <%= place.mobile %></br>
-                  <% end %>
-                  
-                  <% if !place.email.nil? %><a href="mailto:<%= place.email %>" class="fa fa-envelope"></a><% end %>
-                  <% if !place.website.nil? %><a href="<%= place.website %>" class="fa fa-home"></a><% end %>
-                  <% if !place.menu.nil? %><a href="<%= place.menu %>" class="fa fa-cutlery"></a><% end %>
-                  </br>
-                </td>
-              </tr>
-            </table>
-            </p>
-          <% end %>
-          
-        </section>
-        
-        <% end %>
+        </div>
       </div>
     </div>
+    <div class="col-md-10">
+      <% categories.each do |category| %>
+      
+      <div class="page-header">
+        <h1><%= category.capitalize %></h1>
+      </div>
+      
+      <% data.places.select{|item| item.categories.include?(category)}.sort{|item1, item2| item1.name <=> item2.name}.each do |place| %>
+      <h3><%= place.name %></h3>
+      <p>
+      <table>
+        <tr>
+          <td><% if !place.image.nil? %><img src="<%= place.image %>" width="150" height="150" /><% end %></td>
+          <td></td>
+          <td valign="top" align="left">
+            <% if !place.address.nil? %>
+            <%= place.address.split(',')[0]%></br>
+            <%= place.address.split(',')[1]%></br>
+            <% end %>
+            
+            <% if !place.telephone.nil? %>
+            <i class="fa fa-phone"></i> <%= place.telephone %></br>
+            <% end %>
+            
+            <% if !place.mobile.nil? %>
+            <i class="fa fa-mobile"></i> <%= place.mobile %></br>
+            <% end %>
+            
+            <% if !place.email.nil? %><a href="mailto:<%= place.email %>" class="fa fa-envelope"></a><% end %>
+            <% if !place.website.nil? %><a href="<%= place.website %>" class="fa fa-home"></a><% end %>
+            <% if !place.menu.nil? %><a href="<%= place.menu %>" class="fa fa-cutlery"></a><% end %>
+            </br>
+          </td>
+        </tr>
+      </table>
+      </p>
+      <% end %>
+    <% end %>
   </div>
+</div>
 </div>
