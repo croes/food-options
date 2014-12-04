@@ -88,4 +88,13 @@
   remarks:
     - Delivery before 10 am
   categories:
-    - sandwiches    
+    - sandwiches
+
+- name: Universum
+  address: Herbert Hooverplein 26, 3000 Leuven
+  telephone: +32 16 20 07 50
+  delivery: no
+  remarks:
+    - 9 minutes by car
+  categories:
+    - tavern
