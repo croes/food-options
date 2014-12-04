@@ -5,7 +5,7 @@ rvm:
 branches:
   only:
   - master
-script: bundle exec rake publish
+script: bundle exec rake travis
 env:
   global:
     secure: "TfmBI3JpqhUrgvnCq9p4v2Irz9TcqD2kmMlZdhHmpi4/aL6FnWxYfAKImHdyn0D9ZughoceHh9ZIx52xxah2gk5UohQg3pEkr++SRiO5Y8aqhX62PCq77AUtJDaVHkSljVIOsVqqRz8NO8JcuERfjfCOZmdqYJHnQJiavnM55CE="

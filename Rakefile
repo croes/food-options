@@ -19,8 +19,9 @@ task :publish do
   File.open('.git/credentials', 'w') do |f|
     f.write("https://#{ENV['GH_TOKEN']}:@github.com")
   end
+  Dir.chdir '..'
   system 'bundle exec middleman deploy'
-  File.delete '.git/credentials'
+  File.delete 'build/.git/credentials'
 end
 
 desc 'Generate site from Travis CI and publish site to GitHub Pages'
