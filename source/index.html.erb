@@ -11,7 +11,7 @@ title: Food Options
         </div>
         <div class="panel-body">
           <% categories.each do |category| %>
-          <a href="#"><%= category.capitalize %></a><br />
+          <a href="#<%= category %>"><%= category.capitalize %></a><br />
           <% end %>
         </div>
       </div>
@@ -20,7 +20,7 @@ title: Food Options
       <% categories.each do |category| %>
       
       <div class="page-header">
-        <h1><%= category.capitalize %></h1>
+        <h1 id="<%= category %>"><%= category.capitalize %></h1>
       </div>
       
       <% data.places.select{|item| item.categories.include?(category)}.sort{|item1, item2| item1.name <=> item2.name}.each do |place| %>
@@ -53,7 +53,7 @@ title: Food Options
       </table>
       </p>
       <% end %>
-    <% end %>
+      <% end %>
+    </div>
   </div>
-</div>
 </div>
