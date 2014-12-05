@@ -25,12 +25,16 @@ title: Food Options
       
       <% data.places.select{|item| item.categories.include?(category)}.sort{|item1, item2| item1.name <=> item2.name}.each do |place| %>
       <h3><%= place.name %></h3>
-      <p>
-      <table>
-        <tr>
-          <td><% if !place.image.nil? %><img src="<%= place.image %>" width="150" height="150" /><% end %></td>
-          <td></td>
-          <td valign="top" align="left">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <% if place.image.nil? %>
+            <i class="fa fa-picture-o fa-5x" ></i>
+            <% else %>
+            <img src="<%= place.image %>" width="150" height="150" />
+            <% end %>
+          </div>
+          <div class="col-md-10">
             <% if !place.address.nil? %>
             <%= place.address.split(',')[0]%></br>
             <%= place.address.split(',')[1]%></br>
@@ -47,11 +51,9 @@ title: Food Options
             <% if !place.email.nil? %><a href="mailto:<%= place.email %>" class="fa fa-envelope"></a><% end %>
             <% if !place.website.nil? %><a href="<%= place.website %>" class="fa fa-home"></a><% end %>
             <% if !place.menu.nil? %><a href="<%= place.menu %>" class="fa fa-cutlery"></a><% end %>
-            </br>
-          </td>
-        </tr>
-      </table>
-      </p>
+          </div>
+        </div>
+      </div>
       <% end %>
       <% end %>
     </div>
