@@ -5,8 +5,8 @@
   website: http://broodjeszaak-delicious.weebly.com/
   menu: http://broodjeszaak-delicious.weebly.com/broodjeslijst.html
   delivery: false
+  drivingTime: 4 min 
   remarks:
-    - Less than 5 minutes by car
     - Wednessday during luch time, expect a queue of +- 15 minutes
   categories:
     - sandwiches   
@@ -20,11 +20,13 @@
     - Closed  
 
 - name: Bagna
+  image: https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1734_45874232203_1053_n.jpg?oh=d26dbd456e130d6a0187fd4c3b0ebb57&oe=551D371F&__gda__=1428089318_462429da34c8c32e46efeedd5659e6c7
   address: Aarschotsesteenweg 575, 3012 Wilsele
   telephone: +32 16 44 06 56
   mobile: +32 496 86 16 56
   fax: +32 16 44 06 56
   delivery: false
+  drivingTime: 15 min 
   openingHours:
     - Closed
     - Closed
@@ -48,6 +50,7 @@
   menu: http://www.thaihouse.be/en/restaurant/menu
   delivery: false
   takeAway: true
+  drivingTime: 10 min 
   openingHours:
     - 12:00-14:30 & 17:30-21:30
     - 12:00-14:30 & 17:30-21:30
@@ -94,7 +97,6 @@
   address: Herbert Hooverplein 26, 3000 Leuven
   telephone: +32 16 20 07 50
   delivery: no
-  remarks:
-    - 9 minutes by car
+  drivingTime: 10 min 
   categories:
     - tavern

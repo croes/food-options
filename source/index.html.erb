@@ -34,7 +34,7 @@ title: Food Options
             <img src="<%= place.image %>" width="150" height="150" />
             <% end %>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-5">
             <% if !place.address.nil? %>
             <%= place.address.split(',')[0]%></br>
             <%= place.address.split(',')[1]%></br>
@@ -48,9 +48,25 @@ title: Food Options
             <i class="fa fa-mobile"></i> <%= place.mobile %></br>
             <% end %>
             
+            <% if !place.drivingTime.nil? %>
+            <i class="fa fa-car"></i> <%= place.drivingTime %></br>
+            <% end %>
+  
+            <br />
+            
             <% if !place.email.nil? %><a href="mailto:<%= place.email %>" class="fa fa-envelope"></a><% end %>
             <% if !place.website.nil? %><a href="<%= place.website %>" class="fa fa-home"></a><% end %>
             <% if !place.menu.nil? %><a href="<%= place.menu %>" class="fa fa-cutlery"></a><% end %>
+          </div>
+          <div class="col-md-5">
+
+            <% if !place.openingHours.nil? %>
+            <div class="container">
+              <div class="row">
+              </div>
+            </div>
+            <% end %>
+
           </div>
         </div>
       </div>
