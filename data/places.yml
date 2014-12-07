@@ -110,3 +110,13 @@
   delivery: no
   categories:
     - tavern
+
+- name: The Lodge
+  address: Kantineplein 1, 3001 Heverlee
+  telephone: +32 16 20 74 33   
+  website: http://www.lodge-hotels.be/lodge/brasheverleeindex.jsp
+  email: brasserieheverlee@lodge-hotels.be
+  menu: http://www.lodge-hotels.be/lodge/images/kaarten/menukaartheverlee.pdf
+  delivery: no
+  categories:
+    - tavern    
