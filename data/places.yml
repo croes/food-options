@@ -100,3 +100,13 @@
   drivingTime: 10 min 
   categories:
     - tavern
+
+- name: Brasserie 500
+  address: Naamsesteenweg 500, 3001 Heverlee
+  telephone: +32 16 41 37 04    
+  website: http://www.brasserie500.be/
+  email: info@brasserie500.be
+  menu: http://www.brasserie500.be/onze-menu/
+  delivery: no
+  categories:
+    - tavern
