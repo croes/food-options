@@ -120,3 +120,21 @@
   delivery: no
   categories:
     - tavern    
+
+- name: Lovanium
+  address: Galgebergstraat 41, 3000 Leuven
+  telephone: +32 16 29 80 43
+  website: http://www.lovanium.com/
+  email: info@lovanium.com
+  menu: http://www.lovanium.com/club-house/menu
+  delivery: no
+  openingHours:
+    - 09:00-23:00
+    - 09:00-23:00
+    - 09:00-23:00
+    - 09:00-23:00
+    - 09:00-23:00
+    - 09:00-23:00
+    - 09:00-23:00
+  categories:
+    - tavern     
