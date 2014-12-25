@@ -171,3 +171,13 @@
     - You can park your car on the "Sint-Jacobsplein"
   categories:
     - sandwiches
+	
+- name: Burger Folie
+  address: Muntstraat 4, 3000 Leuven
+  website: http://www.burgerfolie.be/
+  telephone: +32 16 88 66 08
+  delivery: no
+  drivingTime: 10 min
+  menu: http://www.burgerfolie.be/images/Menukaart.pdf 
+  categories:
+   - hamburgers
