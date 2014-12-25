@@ -1,5 +1,6 @@
 ---
 title: Food Options
+priority: 1.0
 ---
 <% categories = data.places.map{|item| item.categories}.flatten.uniq.sort %>
 <div class="container-fluid">
@@ -61,10 +62,10 @@ title: Food Options
           <div class="col-md-5">
 
             <% if !place.openingHours.nil? %>
-            <div class="container">
-              <div class="row">
+              <div class="container">
+                <div class="row">
+                </div>
               </div>
-            </div>
             <% end %>
 
           </div>

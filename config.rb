@@ -53,6 +53,8 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
+set :url_root, 'http://neher.github.io/food-options'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -71,6 +73,8 @@ configure :build do
   # set :http_path, "/Content/images/"
 
   activate :directory_indexes
+
+  activate :search_engine_sitemap
 end
 
 activate :deploy do |deploy|
