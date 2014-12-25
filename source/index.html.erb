@@ -35,44 +35,57 @@ priority: 1.0
             <img src="<%= place.image %>" width="150" height="150" />
             <% end %>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-3">
             <% if !place.address.nil? %>
-            <%= place.address.split(',')[0]%></br>
-            <%= place.address.split(',')[1]%></br>
+            <%= place.address.split(',')[0]%><br />
+            <%= place.address.split(',')[1]%><br />
             <% end %>
             
             <% if !place.telephone.nil? %>
-            <i class="fa fa-phone"></i> <%= place.telephone %></br>
+            <i class="fa fa-phone"></i> <%= place.telephone %><br />
             <% end %>
             
             <% if !place.mobile.nil? %>
-            <i class="fa fa-mobile"></i> <%= place.mobile %></br>
+            <i class="fa fa-mobile fa-lg"></i> <%= place.mobile %><br />
             <% end %>
             
             <% if !place.drivingTime.nil? %>
-            <i class="fa fa-car"></i> <%= place.drivingTime %></br>
+            <i class="fa fa-car"></i> <%= place.drivingTime %><br />
             <% end %>
-  
+            
             <br />
             
-            <% if !place.email.nil? %><a href="mailto:<%= place.email %>" class="fa fa-envelope"></a><% end %>
-            <% if !place.website.nil? %><a href="<%= place.website %>" class="fa fa-home"></a><% end %>
-            <% if !place.menu.nil? %><a href="<%= place.menu %>" class="fa fa-cutlery"></a><% end %>
+            <% if place.delivery == true %><i class="fa fa-truck fa-lg"></i><% end %>
+            <% if !place.email.nil? %><a href="mailto:<%= place.email %>" class="fa fa-envelope fa-lg"></a><% end %>
+            <% if !place.website.nil? %><a href="<%= place.website %>" class="fa fa-home fa-lg"></a><% end %>
+            <% if !place.menu.nil? %><a href="<%= place.menu %>" class="fa fa-cutlery fa-lg"></a><% end %>
           </div>
-          <div class="col-md-5">
-
+          <div class="col-md-3">
             <% if !place.openingHours.nil? %>
-              <div class="container">
-                <div class="row">
-                </div>
-              </div>
+            <b><u>Opening Hours</b></u><br />
+            M: <%= place.openingHours[0] %><br />
+            T: <%= place.openingHours[1] %><br />
+            W: <%= place.openingHours[2] %><br />
+            T: <%= place.openingHours[3] %><br />
+            F: <%= place.openingHours[4] %><br />
+            S: <%= place.openingHours[5] %><br />
+            S: <%= place.openingHours[6] %><br />
             <% end %>
-
+          </div>
+          <div class="col-md-4">
+            <% if !place.remarks.nil? %>
+            <b><u>Remarks</b></u>
+            <ul class="remark">
+              <% place.remarks.each do |remark| %>
+              <li class="remark"> <%= remark %>
+                <% end %>
+              </ul>
+              <% end %>
+            </div>
           </div>
         </div>
+        <% end %>
+        <% end %>
       </div>
-      <% end %>
-      <% end %>
     </div>
   </div>
-</div>

@@ -7,7 +7,7 @@
   delivery: false
   drivingTime: 4 min 
   remarks:
-    - Wednessday during luch time, expect a queue of +- 15 minutes
+    - Wednessday during luch time, expect a queue of +- 15 minutes.
   categories:
     - sandwiches   
   openingHours:
@@ -60,8 +60,8 @@
     - 12:00-14:30 & 17:30-22:00
     - 12:00-14:30 & 17:30-21:00
   remarks:
-    - You can park your car on the "Herbert Hooverplein" or underground (Ladeuzeplain)
-    - If you take the buffet, you don't have to wait for your food
+    - You can park your car on the "Herbert Hooverplein" or underground (Ladeuzeplain).
+    - If you take the buffet, you don't have to wait for your food.
   categories:
     - asian
 
@@ -89,7 +89,7 @@
   telephone: +32 16 29 66 29
   delivery: yes
   remarks:
-    - Delivery before 10 am
+    - Delivery before 10 am.
   categories:
     - sandwiches
 
@@ -99,7 +99,7 @@
   delivery: no
   drivingTime: 10 min
   remarks:
-    - You can park your car on the "Herbert Hooverplein" or underground (Ladeuzeplain)
+    - You can park your car on the "Herbert Hooverplein" or underground (Ladeuzeplain).
   categories:
     - tavern
 
@@ -149,7 +149,7 @@
   delivery: no
   drivingTime: 10 min
   remarks:
-    - You can park your car on the "Herbert Hooverplein" or underground (Ladeuzeplain)
+    - You can park your car on the "Herbert Hooverplein" or underground (Ladeuzeplain).
   openingHours:
     - 11:30-14:30 & 17:00-21:00
     - 11:30-14:30 & 17:00-21:00
@@ -168,7 +168,7 @@
   delivery: no
   drivingTime: 5 min
   remarks:
-    - You can park your car on the "Sint-Jacobsplein"
+    - You can park your car on the "Sint-Jacobsplein".
   categories:
     - sandwiches
 
