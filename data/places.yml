@@ -181,3 +181,26 @@
   menu: http://www.burgerfolie.be/images/Menukaart.pdf 
   categories:
    - hamburgers
+
+- name: "'t Smulhoekje"
+  address: Biezenstraat 1, 3000 Leuven
+  website: https://foursquare.com/v/t-smulhoekje/4be71f2c2457a5931593ad15
+  telephone: +32 16 29 79 99
+  delivery: no
+  drivingTime: 5 min
+  remarks:
+    - You can park your car on the "Sint-Jacobsplein".
+  categories:
+    - sandwiches
+
+- name: Yellow Star
+  address: Kapucijnenvoer 195, 3000 Leuven
+  website: N.A.
+  telephone: +32 16 20 55 96
+  delivery: no
+  drivingTime: 5 min
+  menu: 
+  categories:
+    - kebab
+  remarks:
+    - "Usually plenty of parking space in side streets (Arthur de Greefstraat, Prosper Poulletlaan). Free parking, but use  your 'parkeerschijf'." 
