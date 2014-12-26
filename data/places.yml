@@ -182,17 +182,6 @@
   categories:
    - hamburgers
 
-- name: "'t Smulhoekje"
-  address: Biezenstraat 1, 3000 Leuven
-  website: https://foursquare.com/v/t-smulhoekje/4be71f2c2457a5931593ad15
-  telephone: +32 16 29 79 99
-  delivery: no
-  drivingTime: 5 min
-  remarks:
-    - You can park your car on the "Sint-Jacobsplein".
-  categories:
-    - sandwiches
-
 - name: Yellow Star
   address: Kapucijnenvoer 195, 3000 Leuven
   website: N.A.
